@@ -29,17 +29,18 @@ public class TransferFundsPage {
 
     @FindBy(xpath="//h1[contains(text(),'Transfer Funds')]")
     WebElement transferHeader;
+    
+    @FindBy(xpath = "//*[contains(text(),'error') or contains(text(),'insufficient')]")
+    WebElement largeTransferError;
 
 
-    // ---------- Navigation ----------
+
+   
 
     public void openTransfer(){
         WaitUtil.waitForVisibility(transferLink).click();
     }
-
-
-    // ---------- VALID TRANSFER ----------
-
+    
     public void transferValidAmount(){
 
         WebElement amtField = WaitUtil.waitForVisibility(amount);
@@ -50,9 +51,6 @@ public class TransferFundsPage {
         WaitUtil.waitForVisibility(transferBtn).click();
     }
 
-
-    // ---------- INVALID TRANSFER ----------
-
     public void transferInvalidAmount(){
 
         WebElement amtField = WaitUtil.waitForVisibility(amount);
@@ -61,9 +59,15 @@ public class TransferFundsPage {
 
         WaitUtil.waitForVisibility(transferBtn).click();
     }
+    
+    public void transferLargeAmount(){
 
+        WaitUtil.waitForVisibility(amount).clear();
+        amount.sendKeys("99999999"); // intentionally huge
 
-    // ---------- VALIDATIONS ----------
+        transferBtn.click();
+    }
+
 
     public boolean isTransferSuccess(){
         return WaitUtil.waitForVisibility(success).isDisplayed();
@@ -76,4 +80,15 @@ public class TransferFundsPage {
     public boolean isTransferPageDisplayed(){
         return WaitUtil.waitForVisibility(transferHeader).isDisplayed();
     }
+    public boolean isLargeTransferErrorDisplayed(){
+
+        try{
+            WaitUtil.waitForVisibility(largeTransferError);
+            return largeTransferError.isDisplayed();
+        }
+        catch(Exception e){
+            return false;
+        }
+    }
+
 }

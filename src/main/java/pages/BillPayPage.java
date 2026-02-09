@@ -52,6 +52,9 @@ public class BillPayPage {
 
     @FindBy(xpath="//*[contains(@class,'error')]")
     WebElement error;
+    
+    @FindBy(xpath = "//*[@id=\"amount\"]")
+    WebElement paymentError;
 
     public void openBillPay(){
 
@@ -89,6 +92,23 @@ public class BillPayPage {
 
         sendPayment.click();
     }
+    public void payLargeBillAmount(){
+
+        WaitUtil.waitForVisibility(payeeName).sendKeys("Test User");
+        address.sendKeys("Hyderabad");
+        city.sendKeys("Hyderabad");
+        state.sendKeys("TS");
+        zip.sendKeys("500001");
+        phone.sendKeys("9381822831");
+        account.sendKeys("12345");
+        verifyAccount.sendKeys("12345");
+
+        amount.clear();
+        amount.sendKeys("99999999"); // intentionally huge
+
+        sendPayment.click();
+    }
+
     public boolean isPaymentSuccess(){
         return WaitUtil.waitForVisibility(success).isDisplayed();
     }
@@ -100,4 +120,15 @@ public class BillPayPage {
     public boolean isErrorDisplayed(){
         return WaitUtil.waitForVisibility(error).isDisplayed();
     }
+    public boolean isLargePaymentErrorDisplayed(){
+
+        try{
+            WaitUtil.waitForVisibility(paymentError);
+            return paymentError.isDisplayed();
+        }
+        catch(Exception e){
+            return false;
+        }
+    }
+
 }

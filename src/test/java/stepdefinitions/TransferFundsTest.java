@@ -41,4 +41,15 @@ public class TransferFundsTest {
     public void error_message_should_displayed() {
         assertTrue(transfer.isErrorDisplayed());
     }
+    
+    @When("user transfers amount greater than balance")
+    public void user_transfers_amount_greater_than_balance() {
+        transfer.transferLargeAmount();
+    }
+
+    @Then("transfer should fail")
+    public void transfer_should_fail() {
+        assertTrue(transfer.isLargeTransferErrorDisplayed());
+    }
+
 }

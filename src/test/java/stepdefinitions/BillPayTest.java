@@ -43,4 +43,14 @@ public class BillPayTest {
 
         assertTrue(bill.isErrorDisplayed());
     }
+    @When("user pays bill with amount greater than balance")
+    public void user_pays_bill_with_amount_greater_than_balance() {
+        bill.payLargeBillAmount();
+    }
+
+    @Then("bill payment should fail")
+    public void bill_payment_should_fail() {
+        assertTrue(bill.isLargePaymentErrorDisplayed());
+    }
+
 }
