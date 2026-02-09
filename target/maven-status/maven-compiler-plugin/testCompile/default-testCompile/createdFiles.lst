@@ -1,0 +1,10 @@
+stepdefinitions\RegistrationTest.class
+stepdefinitions\LoginTest.class
+runners\TestRunner.class
+stepdefinitions\AccountTest.class
+stepdefinitions\TransferFundsTest.class
+stepdefinitions\UpdateContactTest.class
+stepdefinitions\BillPayTest.class
+stepdefinitions\LogoutTest.class
+stepdefinitions\CommonSteps.class
+hooks\Hooks.class
