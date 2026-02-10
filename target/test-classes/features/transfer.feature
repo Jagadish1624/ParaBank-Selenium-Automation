@@ -17,7 +17,7 @@ Scenario: Invalid transfer
 Given user is logged in
 When user opens transfer funds
 And user transfers invalid amount
-Then error message should displayed
+Then error message should be displayed
   
 Scenario: Transfer amount greater than available balance
 Given user is logged in

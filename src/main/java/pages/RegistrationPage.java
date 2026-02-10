@@ -65,16 +65,10 @@ public class RegistrationPage {
     @FindBy(css = ".error")
     List<WebElement> errors;
 
-
-
-    // -----------------------------
-
     public void openRegister(){
         WaitUtil.waitForVisibility(registerLink).click();
     }
 
-
-    // ⭐ VALID USER REGISTRATION
     public void registerValidUser(){
 
         registeredUsername = "Skreddy" + System.currentTimeMillis();
@@ -94,7 +88,6 @@ public class RegistrationPage {
 
         registerBtn.click();
     }
-
 
     public boolean isRegistrationSuccess(){
         return WaitUtil.waitForVisibility(success).isDisplayed();

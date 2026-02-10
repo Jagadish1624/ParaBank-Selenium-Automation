@@ -61,12 +61,22 @@
 	    <artifactId>poi-ooxml</artifactId>
 	    <version>5.2.5</version>
 	</dependency>
+	<!-- Source: https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+	<dependency>
+	    <groupId>org.apache.poi</groupId>
+	    <artifactId>poi-ooxml</artifactId>
+	    <version>5.5.1</version>
+	    <scope>compile</scope>
+	</dependency>
+	<dependency>
+	 <groupId>org.apache.logging.log4j</groupId>
+	 <artifactId>log4j-core</artifactId>
+	 <version>2.22.1</version>
+	</dependency>
 
   </dependencies>
   <build>
     <plugins>
-
-        <!-- ✅ Force Java Version (VERY IMPORTANT) -->
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>

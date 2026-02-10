@@ -1,15 +1,7 @@
 package pages;
 
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import java.time.Duration;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import java.time.Duration;
-
 import org.openqa.selenium.support.*;
-
 import base.DriverSetup;
 import utils.WaitUtil;
 
@@ -52,6 +44,12 @@ public class LoginPage {
 
         return DriverSetup.getDriver().getCurrentUrl().contains("overview");
     }
+    public boolean areLoginElementsVisible() {
+        return username.isDisplayed()
+            && password.isDisplayed()
+            && loginBtn.isDisplayed();
+    }
+
     public String getErrorMessage() {
         return WaitUtil.waitForVisibility(errorMsg).getText();
     }

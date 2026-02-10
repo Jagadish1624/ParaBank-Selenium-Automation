@@ -1,8 +1,6 @@
 package stepdefinitions;
 
 import static org.testng.AssertJUnit.assertTrue;
-import static org.testng.AssertJUnit.assertFalse;
-
 import io.cucumber.java.en.*;
 import pages.LoginPage;
 import utils.ConfigLoader;
@@ -55,7 +53,7 @@ public class LoginTest {
 
     @Then("login page elements should be visible")
     public void login_page_elements_should_be_visible() {
-
-        assertFalse(loginPage.isLoginSuccessful());
+        assertTrue(loginPage.areLoginElementsVisible());
     }
+
 }

@@ -4,6 +4,7 @@ Scenario: Verify overview page
 Given user is logged in
 Then account overview should display
 
-Scenario: Verify balances
+Scenario: Verify account overview and balances
 Given user is logged in
-Then account balances should be visible
+Then account overview should display
+And account balances should be visible

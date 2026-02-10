@@ -12,7 +12,7 @@ public class AccountsPage {
     }
 
     @FindBy(xpath="//a[contains(text(),'Log Out')]")
-    WebElement overview;
+    WebElement LogOut;
 
     @FindBy(id="accountTable")
     WebElement accountsTable;
@@ -28,7 +28,7 @@ public class AccountsPage {
     }
 
     public boolean isOverviewVisible(){
-        return WaitUtil.waitForVisibility(overview).isDisplayed();
+        return WaitUtil.waitForVisibility(LogOut).isDisplayed();
     }
 
     public boolean areBalancesVisible(){
@@ -37,8 +37,7 @@ public class AccountsPage {
 
     public void logout(){
         WaitUtil.waitForVisibility(logout).click();
-
-        // optional but VERY stabilizing
+        
         WaitUtil.waitForVisibility(usernameField);
     }
    
