@@ -9,7 +9,7 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"stepdefinitions", "hooks"},
         		plugin = {
         			    "pretty",
-        			    "json:target/cucumber.json",
+        			    "json:target/cucumber.json","html:target/cucumber-report.html",
         			    "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
         			},
         monochrome = true

@@ -12,6 +12,7 @@ public class Hooks {
 	@Before
 	public void setup() {
 	    DriverSetup.initDriver();
+	   // ExtentManager.initReports();
 	}
 	@After
 	public void tearDown(Scenario scenario){
@@ -29,7 +30,6 @@ public class Hooks {
 	            "image/png",
 	            "Failure Screenshot");
 	    }
-
 	    DriverSetup.quit();
 	}
 

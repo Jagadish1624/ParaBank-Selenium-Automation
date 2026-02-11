@@ -1,10 +1,9 @@
 base\ConfigLoader.class
 pages\UpdateContactPage.class
 pages\LoginPage.class
-pages\BillPayPage.class
-ConfigLoader.class
 base\DriverSetup.class
 pages\AccountsPage.class
+pages\BillPayPage.class
 utils\WaitUtil.class
 pages\RegistrationPage.class
 reports\ExtentManager.class
