@@ -2,12 +2,14 @@ package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
+
 import base.DriverSetup;
 import utils.WaitUtil;
 
 public class LoginPage {
 
     public LoginPage() {
+
         PageFactory.initElements(
                 DriverSetup.getDriver(), this);
     }
@@ -16,7 +18,7 @@ public class LoginPage {
     WebElement username;
 
     @FindBy(name="password")
-     WebElement password;
+    WebElement password;
 
     @FindBy(xpath="//input[@value='Log In']")
     WebElement loginBtn;
@@ -24,16 +26,19 @@ public class LoginPage {
     @FindBy(xpath="//p[contains(@class,'error')]")
     WebElement errorMsg;
 
-
     @FindBy(linkText="Accounts Overview")
     WebElement accountsOverview;
 
+
     public void login(String user, String pass){
 
-        WebElement userField = WaitUtil.waitForVisibility(username);
+        WebElement userField =
+                WaitUtil.waitForVisibility(username);
+        userField.clear();                 // VERY IMPORTANT
         userField.sendKeys(user);
 
-        WebElement passField = WaitUtil.waitForVisibility(password);
+        WebElement passField =
+                WaitUtil.waitForVisibility(password);
         passField.clear();
         passField.sendKeys(pass);
 
@@ -42,16 +47,33 @@ public class LoginPage {
 
     public boolean isLoginSuccessful(){
 
-        return DriverSetup.getDriver().getCurrentUrl().contains("overview");
+        return WaitUtil
+                .waitForVisibility(accountsOverview)
+                .isDisplayed();
     }
-    public boolean areLoginElementsVisible() {
-        return username.isDisplayed()
-            && password.isDisplayed()
-            && loginBtn.isDisplayed();
+    public boolean isErrorDisplayed(){
+
+        try{
+            return WaitUtil
+                    .waitForVisibility(errorMsg)
+                    .isDisplayed();
+        }
+        catch(Exception e){
+            return false;
+        }
+    }
+    public String getErrorMessage(){
+
+        return WaitUtil
+                .waitForVisibility(errorMsg)
+                .getText();
     }
 
-    public String getErrorMessage() {
-        return WaitUtil.waitForVisibility(errorMsg).getText();
+
+    public boolean areLoginElementsVisible(){
+
+        return username.isDisplayed()
+                && password.isDisplayed()
+                && loginBtn.isDisplayed();
     }
 }
-

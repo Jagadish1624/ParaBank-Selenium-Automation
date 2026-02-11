@@ -1,9 +1,11 @@
 package stepdefinitions;
 
 import static org.testng.AssertJUnit.assertTrue;
+
 import io.cucumber.java.en.*;
 import pages.LoginPage;
-import utils.ConfigLoader;
+import base.ConfigLoader;
+import base.DriverSetup;
 
 public class LoginTest {
 
@@ -11,49 +13,49 @@ public class LoginTest {
 
     @Given("user is on login page")
     public void user_is_on_login_page() {
+
+        DriverSetup.getDriver().get(
+                ConfigLoader.get("url")
+        );
     }
 
-    @When("user enters valid username and password")
-    public void user_enters_valid_username_and_password() {
+    @When("user enters username {string} and password {string}")
+    public void user_enters_username_and_password(String user, String pass) {
 
-        loginPage.login(ConfigLoader.get("username"),ConfigLoader.get("password"));
+        // Pull from config when placeholders used
+        if(user.equals("${username}")){
+            user = ConfigLoader.get("username");
+        }
+
+        if(pass.equals("${password}")){
+            pass = ConfigLoader.get("password");
+        }
+
+        loginPage.login(user, pass);
     }
 
-    @Then("user should navigate to account overview")
-    public void user_should_navigate_to_account_overview() {
+    @Then("{string} should be displayed")
+    public void result_should_be_displayed(String result) {
 
-        assertTrue(loginPage.isLoginSuccessful());
-    }
+        if(result.equalsIgnoreCase("success")){
 
-    @When("user enters invalid username")
-    public void user_enters_invalid_username() {
+            assertTrue(
+                    "Login was expected to succeed but failed",
+                    loginPage.isLoginSuccessful()
+            );
+        }
+        else{
 
-        loginPage.login("rajudanger3", ConfigLoader.get("password"));
-    }
-
-    @When("user enters invalid password")
-    public void user_enters_invalid_password() {
-
-        loginPage.login(ConfigLoader.get("username"), "skr");
-    }
-
-    @When("user clicks login without entering credentials")
-    public void user_clicks_login_without_entering_credentials() {
-
-        loginPage.login("", "");
-    }
-
-    @Then("error message should display")
-    public void error_message_should_display() {
-
-    	assertTrue(
-    		    loginPage.getErrorMessage().length() > 0
-    		);
+            assertTrue(
+                    "Error message not displayed for invalid login",
+                    loginPage.isErrorDisplayed()
+            );
+        }
     }
 
     @Then("login page elements should be visible")
     public void login_page_elements_should_be_visible() {
+
         assertTrue(loginPage.areLoginElementsVisible());
     }
-
 }

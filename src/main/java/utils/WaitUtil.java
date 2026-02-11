@@ -4,6 +4,7 @@ import java.time.Duration;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.*;
 
+import base.ConfigLoader;
 import base.DriverSetup;
 
 public class WaitUtil {

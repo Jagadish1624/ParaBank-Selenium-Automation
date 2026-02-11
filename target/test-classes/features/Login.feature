@@ -1,26 +1,14 @@
-Feature: Login Module
+Feature: Login Functionality
 
-Scenario: Login with valid credentials
-Given user is on login page
-When user enters valid username and password
-Then user should navigate to account overview
+  Scenario Outline: Verify login with multiple credential combinations
+    Given user is on login page
+    When user enters username "<Username>" and password "<Password>"
+    Then "<Result>" should be displayed
 
-Scenario: Login with invalid username
-Given user is on login page
-When user enters invalid username
-Then error message should display
-
-Scenario: Login with invalid password
-Given user is on login page
-When user enters invalid password
-Then error message should display
-
-Scenario: Login with blank credentials
-Given user is on login page
-When user clicks login without entering credentials
-Then error message should display
-
-Scenario: Verify UI elements
-Given user is on login page
-Then login page elements should be visible
-
+  Examples:
+    | Username                  | Password                  | Result      |
+    | ${username}              | ${password}              | success     |
+    | invalidUser              | ${password}              | error       |
+    | ${username}              | wrongPass                | error       |
+    |                          |                          | error       |
+    | invalidUser              | WrongPass                | error       |

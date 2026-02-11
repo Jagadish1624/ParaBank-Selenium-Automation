@@ -1,8 +1,8 @@
 package stepdefinitions;
 
+import base.ConfigLoader;
 import io.cucumber.java.en.Given;
 import pages.LoginPage;
-import utils.ConfigLoader;
 
 public class CommonSteps {
 

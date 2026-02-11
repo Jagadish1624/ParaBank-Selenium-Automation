@@ -1,13 +1,13 @@
 C:\Users\HP\Desktop\ParaBank Selenium Automation\ParaBankSeleniumAutomation\src\main\java\base\DriverSetup.java
-C:\Users\HP\Desktop\ParaBank Selenium Automation\ParaBankSeleniumAutomation\src\main\java\base\baseTest.java
 C:\Users\HP\Desktop\ParaBank Selenium Automation\ParaBankSeleniumAutomation\src\main\java\pages\LoginPage.java
 C:\Users\HP\Desktop\ParaBank Selenium Automation\ParaBankSeleniumAutomation\src\main\java\utils\WaitUtil.java
 C:\Users\HP\Desktop\ParaBank Selenium Automation\ParaBankSeleniumAutomation\src\main\java\pages\BillPayPage.java
 C:\Users\HP\Desktop\ParaBank Selenium Automation\ParaBankSeleniumAutomation\src\main\java\pages\RegistrationPage.java
-C:\Users\HP\Desktop\ParaBank Selenium Automation\ParaBankSeleniumAutomation\src\main\java\utils\ConfigLoader.java
 C:\Users\HP\Desktop\ParaBank Selenium Automation\ParaBankSeleniumAutomation\src\main\java\utils\ScreenshotUtil.java
 C:\Users\HP\Desktop\ParaBank Selenium Automation\ParaBankSeleniumAutomation\src\main\java\utils\ExcelUtil.java
 C:\Users\HP\Desktop\ParaBank Selenium Automation\ParaBankSeleniumAutomation\src\main\java\pages\TransferFundsPage.java
 C:\Users\HP\Desktop\ParaBank Selenium Automation\ParaBankSeleniumAutomation\src\main\java\pages\AccountsPage.java
 C:\Users\HP\Desktop\ParaBank Selenium Automation\ParaBankSeleniumAutomation\src\main\java\pages\UpdateContactPage.java
+C:\Users\HP\Desktop\ParaBank Selenium Automation\ParaBankSeleniumAutomation\src\main\java\ConfigLoader.java
 C:\Users\HP\Desktop\ParaBank Selenium Automation\ParaBankSeleniumAutomation\src\main\java\reports\ExtentManager.java
+C:\Users\HP\Desktop\ParaBank Selenium Automation\ParaBankSeleniumAutomation\src\main\java\base\ConfigLoader.java

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,61 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">22 methods,   22 passed</span>
+                    <span class="method-stats">22 methods, 9 failed,   13 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Invalid transfer&quot;, &quot;Transfer Funds&quot;)">runScenario("Invalid transfer", "Transfer Funds")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Navigate to bill pay&quot;, &quot;Bill Pay&quot;)">runScenario("Navigate to bill pay", "Bill Pay")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Invalid bill payment&quot;, &quot;Bill Pay&quot;)">runScenario("Invalid bill payment", "Bill Pay")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Transfer amount greater than available balance&quot;, &quot;Transfer Funds&quot;)">runScenario("Transfer amount greater than available balance", "Transfer Funds")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Bill payment with amount greater than balance&quot;, &quot;Bill Pay&quot;)">runScenario("Bill payment with amount greater than balance", "Bill Pay")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Navigate to transfer page&quot;, &quot;Transfer Funds&quot;)">runScenario("Navigate to transfer page", "Transfer Funds")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify account overview and balances&quot;, &quot;Account Overview&quot;)">runScenario("Verify account overview and balances", "Account Overview")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Valid bill payment&quot;, &quot;Bill Pay&quot;)">runScenario("Valid bill payment", "Bill Pay")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Valid transfer&quot;, &quot;Transfer Funds&quot;)">runScenario("Valid transfer", "Transfer Funds")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,87 +157,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Navigate to registration page&quot;, &quot;User Registration&quot;)">runScenario("Navigate to registration page", "User Registration")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify overview page&quot;, &quot;Account Overview&quot;)">runScenario("Verify overview page", "Account Overview")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Navigate to bill pay&quot;, &quot;Bill Pay&quot;)">runScenario("Navigate to bill pay", "Bill Pay")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with valid credentials&quot;, &quot;Login Module&quot;)">runScenario("Login with valid credentials", "Login Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify account overview and balances&quot;, &quot;Account Overview&quot;)">runScenario("Verify account overview and balances", "Account Overview")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Bill payment with amount greater than balance&quot;, &quot;Bill Pay&quot;)">runScenario("Bill payment with amount greater than balance", "Bill Pay")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Navigate to contact update&quot;, &quot;Update Contact Info&quot;)">runScenario("Navigate to contact update", "Update Contact Info")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify UI elements&quot;, &quot;Login Module&quot;)">runScenario("Verify UI elements", "Login Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with blank credentials&quot;, &quot;Login Module&quot;)">runScenario("Login with blank credentials", "Login Module")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Update valid data&quot;, &quot;Update Contact Info&quot;)">runScenario("Update valid data", "Update Contact Info")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Register a new user with valid information&quot;, &quot;User Registration&quot;)">runScenario("Register a new user with valid information", "User Registration")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Transfer amount greater than available balance&quot;, &quot;Transfer Funds&quot;)">runScenario("Transfer amount greater than available balance", "Transfer Funds")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Valid bill payment&quot;, &quot;Bill Pay&quot;)">runScenario("Valid bill payment", "Bill Pay")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify logout&quot;, &quot;Logout&quot;)">runScenario("Verify logout", "Logout")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Valid transfer&quot;, &quot;Transfer Funds&quot;)">runScenario("Valid transfer", "Transfer Funds")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Invalid transfer&quot;, &quot;Transfer Funds&quot;)">runScenario("Invalid transfer", "Transfer Funds")</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Update invalid data&quot;, &quot;Update Contact Info&quot;)">runScenario("Update invalid data", "Update Contact Info")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify login with multiple credential combinations&quot;, &quot;Login Functionality&quot;)">runScenario("Verify login with multiple credential combinations", "Login Functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -193,22 +172,52 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with invalid username&quot;, &quot;Login Module&quot;)">runScenario("Login with invalid username", "Login Module")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify logout&quot;, &quot;Logout&quot;)">runScenario("Verify logout", "Logout")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with invalid password&quot;, &quot;Login Module&quot;)">runScenario("Login with invalid password", "Login Module")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Navigate to contact update&quot;, &quot;Update Contact Info&quot;)">runScenario("Navigate to contact update", "Update Contact Info")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Invalid bill payment&quot;, &quot;Bill Pay&quot;)">runScenario("Invalid bill payment", "Bill Pay")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify overview page&quot;, &quot;Account Overview&quot;)">runScenario("Verify overview page", "Account Overview")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Navigate to transfer page&quot;, &quot;Transfer Funds&quot;)">runScenario("Navigate to transfer page", "Transfer Funds")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify login with multiple credential combinations&quot;, &quot;Login Functionality&quot;)">runScenario("Verify login with multiple credential combinations", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Update valid data&quot;, &quot;Update Contact Info&quot;)">runScenario("Update valid data", "Update Contact Info")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Update invalid data&quot;, &quot;Update Contact Info&quot;)">runScenario("Update invalid data", "Update Contact Info")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Navigate to registration page&quot;, &quot;User Registration&quot;)">runScenario("Navigate to registration page", "User Registration")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify login with multiple credential combinations&quot;, &quot;Login Functionality&quot;)">runScenario("Verify login with multiple credential combinations", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify login with multiple credential combinations&quot;, &quot;Login Functionality&quot;)">runScenario("Verify login with multiple credential combinations", "Login Functionality")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="runners.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify login with multiple credential combinations&quot;, &quot;Login Functionality&quot;)">runScenario("Verify login with multiple credential combinations", "Login Functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -223,28 +232,56 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">runners.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Navigate to registration page&quot;, &quot;User Registration&quot;)">
-                  </a> <!-- runScenario("Navigate to registration page", "User Registration") -->
+                  <a name="runScenario(&quot;Invalid transfer&quot;, &quot;Transfer Funds&quot;)">
+                  </a> <!-- runScenario("Invalid transfer", "Transfer Funds") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Navigate to registration page","User Registration")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify overview page&quot;, &quot;Account Overview&quot;)">
-                  </a> <!-- runScenario("Verify overview page", "Account Overview") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify overview page","Account Overview")</span>
+                  <span class="parameters">("Invalid transfer","Transfer Funds")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: amount&apos;
+(tried for 15 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utils.WaitUtil.waitForVisibility(WaitUtil.java:23)
+	at pages.TransferFundsPage.transferInvalidAmount(TransferFundsPage.java:56)
+	at stepdefinitions.TransferFundsTest.user_transfers_invalid_amount(TransferFundsTest.java:37)
+	at ✽.user transfers invalid amount(file:///C:/Users/HP/Desktop/ParaBank%20Selenium%20Automation/ParaBankSeleniumAutomation/src/test/resources/features/transfer.feature:19)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#amount&quot;}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b4bacb98d7344f0be9cf69652fdfb859, findElement {value=amount, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56679}, goog:processID: 37844, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56679/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b4bacb98d7344f0be9cf69652fdfb859
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:367)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:353)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:350)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:207)
+	... 4 more
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -255,26 +292,140 @@
                   </a> <!-- runScenario("Navigate to bill pay", "Bill Pay") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Navigate to bill pay","Bill Pay")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h1[contains(text(),&apos;Bill Payment Service&apos;)]&apos;
+(tried for 15 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utils.WaitUtil.waitForVisibility(WaitUtil.java:23)
+	at pages.BillPayPage.isBillPayPageDisplayed(BillPayPage.java:117)
+	at stepdefinitions.BillPayTest.user_opens_bill_pay(BillPayTest.java:16)
+	at ✽.user opens bill pay(file:///C:/Users/HP/Desktop/ParaBank%20Selenium%20Automation/ParaBankSeleniumAutomation/src/test/resources/features/billpay.feature:5)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),&apos;Bill Payment Service&apos;)]&quot;}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eb0cc9dc3fc618940aa8098704a478d3, findElement {value=//h1[contains(text(),&apos;Bill Payment Service&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59638}, goog:processID: 36112, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59638/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: eb0cc9dc3fc618940aa8098704a478d3
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:367)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:353)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:350)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:207)
+	... 4 more
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Login with valid credentials&quot;, &quot;Login Module&quot;)">
-                  </a> <!-- runScenario("Login with valid credentials", "Login Module") -->
+                  <a name="runScenario(&quot;Invalid bill payment&quot;, &quot;Bill Pay&quot;)">
+                  </a> <!-- runScenario("Invalid bill payment", "Bill Pay") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login with valid credentials","Login Module")</span>
+                  <span class="parameters">("Invalid bill payment","Bill Pay")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h1[contains(text(),&apos;Bill Payment Service&apos;)]&apos;
+(tried for 15 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utils.WaitUtil.waitForVisibility(WaitUtil.java:23)
+	at pages.BillPayPage.isBillPayPageDisplayed(BillPayPage.java:117)
+	at stepdefinitions.BillPayTest.user_opens_bill_pay(BillPayTest.java:16)
+	at ✽.user opens bill pay(file:///C:/Users/HP/Desktop/ParaBank%20Selenium%20Automation/ParaBankSeleniumAutomation/src/test/resources/features/billpay.feature:18)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),&apos;Bill Payment Service&apos;)]&quot;}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d72391e0bcb815d222b12779d8d48be8, findElement {value=//h1[contains(text(),&apos;Bill Payment Service&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63765}, goog:processID: 22304, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63765/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d72391e0bcb815d222b12779d8d48be8
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:367)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:353)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:350)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:207)
+	... 4 more
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verify account overview and balances&quot;, &quot;Account Overview&quot;)">
-                  </a> <!-- runScenario("Verify account overview and balances", "Account Overview") -->
+                  <a name="runScenario(&quot;Transfer amount greater than available balance&quot;, &quot;Transfer Funds&quot;)">
+                  </a> <!-- runScenario("Transfer amount greater than available balance", "Transfer Funds") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify account overview and balances","Account Overview")</span>
+                  <span class="parameters">("Transfer amount greater than available balance","Transfer Funds")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: amount&apos;
+(tried for 15 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utils.WaitUtil.waitForVisibility(WaitUtil.java:23)
+	at pages.TransferFundsPage.transferLargeAmount(TransferFundsPage.java:65)
+	at stepdefinitions.TransferFundsTest.user_transfers_amount_greater_than_balance(TransferFundsTest.java:47)
+	at ✽.user transfers amount greater than balance(file:///C:/Users/HP/Desktop/ParaBank%20Selenium%20Automation/ParaBankSeleniumAutomation/src/test/resources/features/transfer.feature:25)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#amount&quot;}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a8bf6d1eb0b1f8ceed522f02b8521f10, findElement {value=amount, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55904}, goog:processID: 32280, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55904/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a8bf6d1eb0b1f8ceed522f02b8521f10
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:367)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:353)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:350)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:207)
+	... 4 more
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -285,50 +436,248 @@
                   </a> <!-- runScenario("Bill payment with amount greater than balance", "Bill Pay") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Bill payment with amount greater than balance","Bill Pay")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h1[contains(text(),&apos;Bill Payment Service&apos;)]&apos;
+(tried for 15 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utils.WaitUtil.waitForVisibility(WaitUtil.java:23)
+	at pages.BillPayPage.isBillPayPageDisplayed(BillPayPage.java:117)
+	at stepdefinitions.BillPayTest.user_opens_bill_pay(BillPayTest.java:16)
+	at ✽.user opens bill pay(file:///C:/Users/HP/Desktop/ParaBank%20Selenium%20Automation/ParaBankSeleniumAutomation/src/test/resources/features/billpay.feature:24)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),&apos;Bill Payment Service&apos;)]&quot;}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [775bd6697c2458c8bde4e4b46286b637, findElement {value=//h1[contains(text(),&apos;Bill Payment Service&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55486}, goog:processID: 29908, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55486/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 775bd6697c2458c8bde4e4b46286b637
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:367)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:353)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:350)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:207)
+	... 4 more
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Navigate to contact update&quot;, &quot;Update Contact Info&quot;)">
-                  </a> <!-- runScenario("Navigate to contact update", "Update Contact Info") -->
+                  <a name="runScenario(&quot;Navigate to transfer page&quot;, &quot;Transfer Funds&quot;)">
+                  </a> <!-- runScenario("Navigate to transfer page", "Transfer Funds") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Navigate to contact update","Update Contact Info")</span>
+                  <span class="parameters">("Navigate to transfer page","Transfer Funds")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h1[contains(text(),&apos;Transfer Funds&apos;)]&apos;
+(tried for 15 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utils.WaitUtil.waitForVisibility(WaitUtil.java:23)
+	at pages.TransferFundsPage.isTransferPageDisplayed(TransferFundsPage.java:81)
+	at stepdefinitions.TransferFundsTest.transfer_page_should_display(TransferFundsTest.java:21)
+	at ✽.transfer page should display(file:///C:/Users/HP/Desktop/ParaBank%20Selenium%20Automation/ParaBankSeleniumAutomation/src/test/resources/features/transfer.feature:6)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),&apos;Transfer Funds&apos;)]&quot;}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [867f7ef5b0138b19e7935add8bf49d47, findElement {value=//h1[contains(text(),&apos;Transfer Funds&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56564}, goog:processID: 22932, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56564/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 867f7ef5b0138b19e7935add8bf49d47
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:367)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:353)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:350)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:207)
+	... 4 more
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Verify UI elements&quot;, &quot;Login Module&quot;)">
-                  </a> <!-- runScenario("Verify UI elements", "Login Module") -->
+                  <a name="runScenario(&quot;Verify account overview and balances&quot;, &quot;Account Overview&quot;)">
+                  </a> <!-- runScenario("Verify account overview and balances", "Account Overview") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify UI elements","Login Module")</span>
+                  <span class="parameters">("Verify account overview and balances","Account Overview")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: accountTable&apos;
+(tried for 15 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utils.WaitUtil.waitForVisibility(WaitUtil.java:23)
+	at pages.AccountsPage.areBalancesVisible(AccountsPage.java:35)
+	at stepdefinitions.AccountTest.account_balances_should_be_visible(AccountTest.java:33)
+	at ✽.account balances should be visible(file:///C:/Users/HP/Desktop/ParaBank%20Selenium%20Automation/ParaBankSeleniumAutomation/src/test/resources/features/accounts.feature:10)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#accountTable&quot;}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c303c43819c5af3662295fae3077a71b, findElement {value=accountTable, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58232}, goog:processID: 34540, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58232/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c303c43819c5af3662295fae3077a71b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:367)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:353)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:350)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:207)
+	... 4 more
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Login with blank credentials&quot;, &quot;Login Module&quot;)">
-                  </a> <!-- runScenario("Login with blank credentials", "Login Module") -->
+                  <a name="runScenario(&quot;Valid bill payment&quot;, &quot;Bill Pay&quot;)">
+                  </a> <!-- runScenario("Valid bill payment", "Bill Pay") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login with blank credentials","Login Module")</span>
+                  <span class="parameters">("Valid bill payment","Bill Pay")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.xpath: //h1[contains(text(),&apos;Bill Payment Service&apos;)]&apos;
+(tried for 15 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utils.WaitUtil.waitForVisibility(WaitUtil.java:23)
+	at pages.BillPayPage.isBillPayPageDisplayed(BillPayPage.java:117)
+	at stepdefinitions.BillPayTest.user_opens_bill_pay(BillPayTest.java:16)
+	at ✽.user opens bill pay(file:///C:/Users/HP/Desktop/ParaBank%20Selenium%20Automation/ParaBankSeleniumAutomation/src/test/resources/features/billpay.feature:11)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//h1[contains(text(),&apos;Bill Payment Service&apos;)]&quot;}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [08617bd1be712150efe40bb0b776bf0c, findElement {value=//h1[contains(text(),&apos;Bill Payment Service&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51018}, goog:processID: 15380, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51018/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 08617bd1be712150efe40bb0b776bf0c
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:367)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:353)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:350)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:207)
+	... 4 more
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Update valid data&quot;, &quot;Update Contact Info&quot;)">
-                  </a> <!-- runScenario("Update valid data", "Update Contact Info") -->
+                  <a name="runScenario(&quot;Valid transfer&quot;, &quot;Transfer Funds&quot;)">
+                  </a> <!-- runScenario("Valid transfer", "Transfer Funds") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Update valid data","Update Contact Info")</span>
+                  <span class="parameters">("Valid transfer","Transfer Funds")</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator &apos;By.id: amount&apos;
+(tried for 15 seconds with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at utils.WaitUtil.waitForVisibility(WaitUtil.java:23)
+	at pages.TransferFundsPage.transferValidAmount(TransferFundsPage.java:46)
+	at stepdefinitions.TransferFundsTest.user_transfers_valid_amount(TransferFundsTest.java:26)
+	at ✽.user transfers valid amount(file:///C:/Users/HP/Desktop/ParaBank%20Selenium%20Automation/ParaBankSeleniumAutomation/src/test/resources/features/transfer.feature:12)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#amount&quot;}
+  (Session info: chrome=144.0.7559.133)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e66d531b39c7484ea9b8e20c90c73f09, findElement {value=amount, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Users\HP\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57189}, goog:processID: 7676, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57189/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e66d531b39c7484ea9b8e20c90c73f09
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:424)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:418)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:367)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:353)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:350)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:207)
+	... 4 more
+
+</div> <!-- stack-trace -->
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runners.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="runScenario(&quot;Register a new user with valid information&quot;, &quot;User Registration&quot;)">
@@ -341,60 +690,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Transfer amount greater than available balance&quot;, &quot;Transfer Funds&quot;)">
-                  </a> <!-- runScenario("Transfer amount greater than available balance", "Transfer Funds") -->
+                  <a name="runScenario(&quot;Verify login with multiple credential combinations&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("Verify login with multiple credential combinations", "Login Functionality") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Transfer amount greater than available balance","Transfer Funds")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Valid bill payment&quot;, &quot;Bill Pay&quot;)">
-                  </a> <!-- runScenario("Valid bill payment", "Bill Pay") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Valid bill payment","Bill Pay")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Verify logout&quot;, &quot;Logout&quot;)">
-                  </a> <!-- runScenario("Verify logout", "Logout") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Verify logout","Logout")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Valid transfer&quot;, &quot;Transfer Funds&quot;)">
-                  </a> <!-- runScenario("Valid transfer", "Transfer Funds") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Valid transfer","Transfer Funds")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Invalid transfer&quot;, &quot;Transfer Funds&quot;)">
-                  </a> <!-- runScenario("Invalid transfer", "Transfer Funds") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Invalid transfer","Transfer Funds")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="runScenario(&quot;Update invalid data&quot;, &quot;Update Contact Info&quot;)">
-                  </a> <!-- runScenario("Update invalid data", "Update Contact Info") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Update invalid data","Update Contact Info")</span>
+                  <span class="parameters">("Verify login with multiple credential combinations","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -411,40 +710,100 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Login with invalid username&quot;, &quot;Login Module&quot;)">
-                  </a> <!-- runScenario("Login with invalid username", "Login Module") -->
+                  <a name="runScenario(&quot;Verify logout&quot;, &quot;Logout&quot;)">
+                  </a> <!-- runScenario("Verify logout", "Logout") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login with invalid username","Login Module")</span>
+                  <span class="parameters">("Verify logout","Logout")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Login with invalid password&quot;, &quot;Login Module&quot;)">
-                  </a> <!-- runScenario("Login with invalid password", "Login Module") -->
+                  <a name="runScenario(&quot;Navigate to contact update&quot;, &quot;Update Contact Info&quot;)">
+                  </a> <!-- runScenario("Navigate to contact update", "Update Contact Info") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Login with invalid password","Login Module")</span>
+                  <span class="parameters">("Navigate to contact update","Update Contact Info")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Invalid bill payment&quot;, &quot;Bill Pay&quot;)">
-                  </a> <!-- runScenario("Invalid bill payment", "Bill Pay") -->
+                  <a name="runScenario(&quot;Verify overview page&quot;, &quot;Account Overview&quot;)">
+                  </a> <!-- runScenario("Verify overview page", "Account Overview") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Invalid bill payment","Bill Pay")</span>
+                  <span class="parameters">("Verify overview page","Account Overview")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Navigate to transfer page&quot;, &quot;Transfer Funds&quot;)">
-                  </a> <!-- runScenario("Navigate to transfer page", "Transfer Funds") -->
+                  <a name="runScenario(&quot;Verify login with multiple credential combinations&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("Verify login with multiple credential combinations", "Login Functionality") -->
                   <span class="method-name">runScenario</span>
-                  <span class="parameters">("Navigate to transfer page","Transfer Funds")</span>
+                  <span class="parameters">("Verify login with multiple credential combinations","Login Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Update valid data&quot;, &quot;Update Contact Info&quot;)">
+                  </a> <!-- runScenario("Update valid data", "Update Contact Info") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Update valid data","Update Contact Info")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Update invalid data&quot;, &quot;Update Contact Info&quot;)">
+                  </a> <!-- runScenario("Update invalid data", "Update Contact Info") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Update invalid data","Update Contact Info")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Navigate to registration page&quot;, &quot;User Registration&quot;)">
+                  </a> <!-- runScenario("Navigate to registration page", "User Registration") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Navigate to registration page","User Registration")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify login with multiple credential combinations&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("Verify login with multiple credential combinations", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify login with multiple credential combinations","Login Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify login with multiple credential combinations&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("Verify login with multiple credential combinations", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify login with multiple credential combinations","Login Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify login with multiple credential combinations&quot;, &quot;Login Functionality&quot;)">
+                  </a> <!-- runScenario("Verify login with multiple credential combinations", "Login Functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify login with multiple credential combinations","Login Functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -515,96 +874,96 @@ data.addRows(22);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'runners.TestRunner')
-data.setCell(0, 3, 9547);
+data.setCell(0, 3, 28149);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
 data.setCell(1, 2, 'runners.TestRunner')
-data.setCell(1, 3, 9232);
+data.setCell(1, 3, 26101);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'runScenario')
 data.setCell(2, 2, 'runners.TestRunner')
-data.setCell(2, 3, 8965);
+data.setCell(2, 3, 24549);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'runScenario')
 data.setCell(3, 2, 'runners.TestRunner')
-data.setCell(3, 3, 8892);
+data.setCell(3, 3, 23008);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'runScenario')
 data.setCell(4, 2, 'runners.TestRunner')
-data.setCell(4, 3, 6899);
+data.setCell(4, 3, 21436);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'runScenario')
 data.setCell(5, 2, 'runners.TestRunner')
-data.setCell(5, 3, 6399);
+data.setCell(5, 3, 21434);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'runScenario')
 data.setCell(6, 2, 'runners.TestRunner')
-data.setCell(6, 3, 6186);
+data.setCell(6, 3, 21281);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'runScenario')
 data.setCell(7, 2, 'runners.TestRunner')
-data.setCell(7, 3, 5765);
+data.setCell(7, 3, 21050);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'runScenario')
 data.setCell(8, 2, 'runners.TestRunner')
-data.setCell(8, 3, 5680);
+data.setCell(8, 3, 19739);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'runScenario')
 data.setCell(9, 2, 'runners.TestRunner')
-data.setCell(9, 3, 5518);
+data.setCell(9, 3, 9122);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'runScenario')
 data.setCell(10, 2, 'runners.TestRunner')
-data.setCell(10, 3, 5447);
+data.setCell(10, 3, 8937);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'runScenario')
 data.setCell(11, 2, 'runners.TestRunner')
-data.setCell(11, 3, 5421);
+data.setCell(11, 3, 7789);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'runScenario')
 data.setCell(12, 2, 'runners.TestRunner')
-data.setCell(12, 3, 5414);
+data.setCell(12, 3, 7768);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'runScenario')
 data.setCell(13, 2, 'runners.TestRunner')
-data.setCell(13, 3, 5145);
+data.setCell(13, 3, 6952);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'runScenario')
 data.setCell(14, 2, 'runners.TestRunner')
-data.setCell(14, 3, 5018);
+data.setCell(14, 3, 6255);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'runScenario')
 data.setCell(15, 2, 'runners.TestRunner')
-data.setCell(15, 3, 5009);
+data.setCell(15, 3, 5739);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'runScenario')
 data.setCell(16, 2, 'runners.TestRunner')
-data.setCell(16, 3, 4592);
+data.setCell(16, 3, 5128);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'runScenario')
 data.setCell(17, 2, 'runners.TestRunner')
-data.setCell(17, 3, 4479);
+data.setCell(17, 3, 4920);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'runScenario')
 data.setCell(18, 2, 'runners.TestRunner')
-data.setCell(18, 3, 4283);
+data.setCell(18, 3, 4262);
 data.setCell(19, 0, 19)
 data.setCell(19, 1, 'runScenario')
 data.setCell(19, 2, 'runners.TestRunner')
-data.setCell(19, 3, 4066);
+data.setCell(19, 3, 4081);
 data.setCell(20, 0, 20)
 data.setCell(20, 1, 'runScenario')
 data.setCell(20, 2, 'runners.TestRunner')
-data.setCell(20, 3, 4010);
+data.setCell(20, 3, 3553);
 data.setCell(21, 0, 21)
 data.setCell(21, 1, 'runScenario')
 data.setCell(21, 2, 'runners.TestRunner')
-data.setCell(21, 3, 3102);
+data.setCell(21, 3, 3158);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -632,100 +991,118 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">runners.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@109188b4)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@6b5c4b75)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Login with valid credentials", "Login Module")</span>
-                <span class="method-start">474 ms</span>
+                <span class="method-name">runScenario("Verify login with multiple credential combinations", "Login Functionality")</span>
+                <span class="method-start">439 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Login with invalid username", "Login Module")</span>
-                <span class="method-start">5890 ms</span>
+                <span class="method-name">runScenario("Verify login with multiple credential combinations", "Login Functionality")</span>
+                <span class="method-start">9564 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Login with invalid password", "Login Module")</span>
-                <span class="method-start">11338 ms</span>
+                <span class="method-name">runScenario("Verify login with multiple credential combinations", "Login Functionality")</span>
+                <span class="method-start">17333 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Login with blank credentials", "Login Module")</span>
-                <span class="method-start">16761 ms</span>
+                <span class="method-name">runScenario("Verify login with multiple credential combinations", "Login Functionality")</span>
+                <span class="method-start">22255 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">runScenario("Verify UI elements", "Login Module")</span>
-                <span class="method-start">21045 ms</span>
+                <span class="method-name">runScenario("Verify login with multiple credential combinations", "Login Functionality")</span>
+                <span class="method-start">25809 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Navigate to registration page", "User Registration")</span>
-                <span class="method-start">24148 ms</span>
+                <span class="method-start">30072 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Register a new user with valid information", "User Registration")</span>
-                <span class="method-start">28629 ms</span>
+                <span class="method-start">35812 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Register user with missing mandatory fields", "User Registration")</span>
-                <span class="method-start">34148 ms</span>
+                <span class="method-start">42068 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify overview page", "Account Overview")</span>
-                <span class="method-start">38159 ms</span>
+                <span class="method-start">45228 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Verify account overview and balances", "Account Overview")</span>
-                <span class="method-start">47706 ms</span>
+                <span class="method-start">50357 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Navigate to bill pay", "Bill Pay")</span>
-                <span class="method-start">52852 ms</span>
+                <span class="method-start">73368 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Valid bill payment", "Bill Pay")</span>
-                <span class="method-start">61817 ms</span>
+                <span class="method-start">97918 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Invalid bill payment", "Bill Pay")</span>
-                <span class="method-start">68004 ms</span>
+                <span class="method-start">119353 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Bill payment with amount greater than balance", "Bill Pay")</span>
-                <span class="method-start">73685 ms</span>
+                <span class="method-start">145456 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Verify logout", "Logout")</span>
-                <span class="method-start">82918 ms</span>
+                <span class="method-start">166894 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Navigate to transfer page", "Transfer Funds")</span>
-                <span class="method-start">87937 ms</span>
+                <span class="method-start">174684 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Valid transfer", "Transfer Funds")</span>
-                <span class="method-start">94837 ms</span>
+                <span class="method-start">195736 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Invalid transfer", "Transfer Funds")</span>
-                <span class="method-start">101237 ms</span>
+                <span class="method-start">215476 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">runScenario("Transfer amount greater than available balance", "Transfer Funds")</span>
-                <span class="method-start">107003 ms</span>
+                <span class="method-start">243626 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Navigate to contact update", "Update Contact Info")</span>
-                <span class="method-start">112013 ms</span>
+                <span class="method-start">264908 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Update valid data", "Update Contact Info")</span>
-                <span class="method-start">116079 ms</span>
+                <span class="method-start">273845 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">runScenario("Update invalid data", "Update Contact Info")</span>
-                <span class="method-start">124972 ms</span>
+                <span class="method-start">280797 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">129565 ms</span>
+                <span class="method-start">284880 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
