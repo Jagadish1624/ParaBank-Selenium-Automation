@@ -17,7 +17,7 @@ public class RegistrationPage {
         PageFactory.initElements(DriverSetup.getDriver(), this);
     }
     public static String registeredUsername;
-    public static String registeredPassword = "rajudangersimely";
+    public static String registeredPassword = "Jaggureddy";
 
 
     @FindBy(linkText="Register")
@@ -74,16 +74,16 @@ public class RegistrationPage {
 
     public void registerValidUser(){
 
-        registeredUsername = "Skreddy" + System.currentTimeMillis();
+        registeredUsername = "SkReddy" + System.currentTimeMillis();
 
-        WaitUtil.waitForVisibility(firstName).sendKeys("Yuva Shekhar");
-        lastName.sendKeys("Kodagal");
-        address.sendKeys("Kodagal");
-        city.sendKeys("Suryapeta");
-        state.sendKeys("Ts");
-        zip.sendKeys("501021");
+        WaitUtil.waitForVisibility(firstName).sendKeys("ATLA JAGADISHWAR");
+        lastName.sendKeys("REDDY");
+        address.sendKeys("ALLAGADDA");
+        city.sendKeys("NANDYAL");
+        state.sendKeys("ANDHRA PRADESH");
+        zip.sendKeys("518155");
         phone.sendKeys("9381822831");
-        ssn.sendKeys("567");
+        ssn.sendKeys("7789");
 
         username.sendKeys(registeredUsername);
         password.sendKeys(registeredPassword);
