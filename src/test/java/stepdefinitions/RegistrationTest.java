@@ -50,6 +50,10 @@ public class RegistrationTest {
     @When("the user submits the form without mandatory fields")
     public void the_user_submits_the_form_without_mandatory_fields() {
         reg.registerWithMissingFields();
+        try { Thread.sleep(2000); } 
+        catch (InterruptedException e) { 
+        	e.printStackTrace(); 
+        	}
     }
 
     @Then("validation error messages should be displayed")

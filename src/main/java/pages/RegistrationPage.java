@@ -1,9 +1,12 @@
 package pages;
 
+import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import base.DriverSetup;
 import utils.WaitUtil;
@@ -98,11 +101,18 @@ public class RegistrationPage {
 
     
 
-    public boolean areErrorsDisplayed(){
-
-        return errors.size() > 0;
-    }
-
+    	public boolean areErrorsDisplayed(){
+    	    try {
+    	        WebDriverWait wait = new WebDriverWait(
+    	            DriverSetup.getDriver(), 
+    	            Duration.ofSeconds(10)
+    	        );
+    	        wait.until(ExpectedConditions.visibilityOfAllElements(errors));
+    	        return errors.size() > 0;
+    	    } catch (Exception e) {
+    	        return errors.size() > 0;
+    	    }
+    	}
     public boolean isRegistrationPageDisplayed(){
         return WaitUtil.waitForVisibility(registerHeader).isDisplayed();
     }
