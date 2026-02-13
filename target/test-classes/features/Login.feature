@@ -8,9 +8,9 @@ Then "<Result>" should be displayed
 Examples:
     | Username      | Password      | Result  |
     | ${username}   | ${password}   | success |
-    | invalidUser   | ${password}   | error   |
-    | ${username}   | wrongPass     | error   |
-    |  invalidUser  | wrongPass     | error   |
+    | jagguredddyyy | ${password}   | error   |
+    | ${username}   | wrongPass1    | error   |
+    |  invalidUser1 | wrongPass1    | error   |
     |               |               | error   |
 
 Scenario: Verify login page elements are visible

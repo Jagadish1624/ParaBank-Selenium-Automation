@@ -8,3 +8,4 @@ Scenario: Verify account overview and balances
 Given user is logged in
 Then account overview should display
 And account balances should be visible
+

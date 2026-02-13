@@ -13,7 +13,6 @@ public class LoginPage {
         PageFactory.initElements(
                 DriverSetup.getDriver(), this);
     }
-
     @FindBy(name="username")
     WebElement username;
 
@@ -28,9 +27,8 @@ public class LoginPage {
 
     @FindBy(linkText="Accounts Overview")
     WebElement accountsOverview;
-
-
-    public void login(String user, String pass){
+    
+  public void login(String user, String pass){
 
         WebElement userField =
                 WaitUtil.waitForVisibility(username);
@@ -68,10 +66,7 @@ public class LoginPage {
                 .waitForVisibility(errorMsg)
                 .getText();
     }
-
-
     public boolean areLoginElementsVisible(){
-
         return username.isDisplayed()
                 && password.isDisplayed()
                 && loginBtn.isDisplayed();

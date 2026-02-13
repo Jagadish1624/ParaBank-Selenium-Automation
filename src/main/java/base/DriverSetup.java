@@ -37,7 +37,7 @@ public class DriverSetup {
 
         if(browser.equalsIgnoreCase("chrome")) {
             WebDriverManager.chromedriver().setup();
-            driver.set(new ChromeDriver());
+            driver.set(new ChromeDriver(options));
         }
         else {
             WebDriverManager.edgedriver().setup();
