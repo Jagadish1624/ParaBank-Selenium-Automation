@@ -4,9 +4,9 @@ pages\LoginPage.class
 base\DriverSetup.class
 pages\AccountsPage.class
 pages\BillPayPage.class
+utils\ExtentReportManager.class
 utils\WaitUtil.class
 pages\RegistrationPage.class
-reports\ExtentManager.class
 utils\ExcelUtil.class
 utils\ScreenshotUtil.class
 pages\TransferFundsPage.class
